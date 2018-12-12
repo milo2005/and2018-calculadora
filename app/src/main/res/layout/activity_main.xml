@@ -6,35 +6,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="@dimen/small"
         tools:context=".MainActivity">
 
     <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"/>
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/small"
+        android:hint="@string/num1"
+        android:inputType="number"
+    />
 
     <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"/>
+              android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small"
+        android:hint="@string/num2"
+        android:inputType="number"
+
+    />
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
+                  android:gravity="center"
                     android:orientation="horizontal">
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sum"/>
+                android:text="@string/add"/>
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-            android:text="Res"
+            android:text="@string/sub"
         />
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mul"
+                android:text="@string/mul"
         />
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Div"
+                android:text="@string/div"
         />
 
 
@@ -42,9 +53,7 @@
 
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
               android:text="00"
-              android:textColor="#00f"
               android:textSize="90sp"
-              android:textColor="#f00"
               android:textStyle="bold"
               android:gravity="center"
     />
